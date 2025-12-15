@@ -88,4 +88,6 @@ class Character:
                 case Stat.EVADE:
                     self.applyEvade = True
 
-            return effects[1:]  # call same function with the processed effect removed
+            return self.applyEffects(
+                effects[1:]
+            )  # call same function with the processed effect removed

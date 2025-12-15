@@ -9,9 +9,9 @@ class CharacterType(Enum):
 
     FIRE = ("FIRE", "WATER", "EARTH")
     EARTH = ("EARTH", "FIRE", "WATER")
-    WATER = ("WATER", "WATER", "FIRE")
+    WATER = ("WATER", "EARTH", "FIRE")
     LIGHT = ("LIGHT", None, "DARK")
-    DARK = ("FIRE", None, "LIGHT")
+    DARK = ("DARK", None, "LIGHT")
 
     def __init__(self, typeName: str, weakness: str | NoneType, strength: str) -> None:
         self.typeName = typeName
