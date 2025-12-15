@@ -2,6 +2,10 @@ from enum import Enum
 
 
 class Stat(Enum):
+    """
+    Enum of Stat
+    """
+
     HP = "HP"
     ATK = "ATK"
     DEF = "DEF"
@@ -9,6 +13,11 @@ class Stat(Enum):
 
 
 class Effect(Enum):
+    """
+    Enum of effect (buffs and debuffs). Each effect contains the affected stat and
+    the multiplier applied to that stat. Merge of buff and debuffs into one class
+    """
+
     HP_BUFF = (Stat.HP, 1.5)
     ATK_BUFF = (Stat.ATK, 1.5)
     DEF_BUFF = (Stat.DEF, 1.5)

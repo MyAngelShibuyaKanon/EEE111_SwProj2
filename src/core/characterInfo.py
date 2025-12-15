@@ -6,6 +6,10 @@ from features.effects.effects import Effect
 
 @dataclass
 class CharacterInfo:
+    """
+    Dataclass to be used when instantiating a Character object
+    """
+
     name: Optional[str] = None
     HP: Optional[int] = None
     ATK: Optional[int] = None
